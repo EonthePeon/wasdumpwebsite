@@ -1,6 +1,7 @@
 {
   "slain": [
-    "gut"
+    "gut",
+    "minthara"
   ],
   "missed": [
     "zhalk"
@@ -13,6 +14,10 @@
     "gut": {
       "player": "Elliot",
       "date": "2026-04-15"
+    },
+    "minthara": {
+      "player": "Otto",
+      "date": "2026-05-03"
     }
   }
 }
