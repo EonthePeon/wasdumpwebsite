@@ -1,10 +1,13 @@
 {
   "slain": [
     "gut",
-    "minthara"
+    "minthara",
+    "flind",
+    "dror-ragzlin"
   ],
   "missed": [
-    "zhalk"
+    "zhalk",
+    "kagha"
   ],
   "details": {
     "zhalk": {
@@ -18,6 +21,18 @@
     "minthara": {
       "player": "Otto",
       "date": "2026-05-03"
+    },
+    "flind": {
+      "player": "Iain",
+      "date": "2026-05-09"
+    },
+    "dror-ragzlin": {
+      "player": "Otto",
+      "date": "2026-05-16"
+    },
+    "kagha": {
+      "player": "",
+      "date": "2026-05-17"
     }
   }
 }
