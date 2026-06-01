@@ -21,6 +21,18 @@ const router = createRouter({
       component: () => import('@/views/BossTrackerView.vue'),
     },
   ],
+  // Add this to handle scrolling to hash links and fixing navbar overlap
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+        top: 70, // <-- Adjust this number to match your fixed navbar height
+      }
+    }
+    // Scroll to top by default if there's no hash
+    return { top: 0 }
+  },
 })
 
 export default router
