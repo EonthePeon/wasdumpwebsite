@@ -18,42 +18,29 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#About">About</a>
+            <RouterLink class="nav-link" :to="{ path: '/', hash: '#About' }">
+              <i class="bi bi-info-circle me-2"></i>About
+            </RouterLink>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Schedule">Schedule</a>
+            <RouterLink class="nav-link" :to="{ path: '/', hash: '#Schedule' }">
+              <i class="bi bi-calendar-event me-2"></i>Schedule
+            </RouterLink>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#RecentVideos">Recent Videos</a>
+            <RouterLink class="nav-link" :to="{ path: '/', hash: '#RecentVideos' }">
+              <i class="bi bi-camera-video me-2"></i>Recent Videos
+            </RouterLink>
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Pass and Play
+          <li class="nav-item">
+            <RouterLink class="nav-link" :to="{ path: '/', hash: '#RetroRaces' }">
+              <i class="bi bi-controller me-2"></i>Retro Races
+            </RouterLink>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" @click.prevent="navigateToBossTracker">
+              <i class="bi bi-trophy me-2"></i>Baldur's Pass Boss Tracker
             </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li>
-                <a class="dropdown-item" href="#PassAndPlay">
-                  <i class="bi bi-controller me-2"></i>Pass and Play
-                </a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <RouterLink class="dropdown-item" :to="{ name: 'BossTracker' }">
-                  <i class="bi bi-trophy me-2"></i>Baldur's Pass Boss Tracker
-                </RouterLink>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#RetroRaces">Retro Races</a>
           </li>
         </ul>
         <div class="d-flex align-items-center">
@@ -82,6 +69,11 @@
 <script>
 export default {
   name: 'cHeader',
+  methods: {
+    navigateToBossTracker() {
+      this.$router.push({ name: 'BossTracker' })
+    },
+  },
 }
 </script>
 
