@@ -33,6 +33,11 @@
             </RouterLink>
           </li>
           <li class="nav-item">
+            <RouterLink class="nav-link" :to="{ path: '/', hash: '#PassAndPlay' }">
+              <i class="bi bi-award me-2"></i>Pass & Play
+            </RouterLink>
+          </li>
+          <li class="nav-item">
             <RouterLink class="nav-link" :to="{ path: '/', hash: '#RetroRaces' }">
               <i class="bi bi-controller me-2"></i>Retro Races
             </RouterLink>
