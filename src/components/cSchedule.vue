@@ -13,7 +13,7 @@
         </p>
 
         <p>
-          Don't worry—the channel isn't going anywhere! The Baldus Pass VODs will keep going in the
+          Don't worry the channel isn't going anywhere! The Baldus Pass VODs will keep going in the
           meantime, and we’ll be back soon with more of our usual one-hour retro gaming challenges
           and spectacular, uncoordinated failures.
         </p>
