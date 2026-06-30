@@ -2,11 +2,32 @@
   <div class="c-schedule container mt-4">
     <h2 class="mb-4 text-center">Stream Schedule</h2>
     <div class="alert alert-info text-center mb-4" role="alert">
+      <article>
+        <h2>Quick Update: Taking a Short Break!</h2>
+
+        <p>Hey everyone,</p>
+
+        <p>
+          We are truly sorry for the lack of new retro game posts on the channel lately. We are on a
+          vacation/break, so we’ll be pressing pause on our usual streams for a short spell.
+        </p>
+
+        <p>
+          Don't worry—the channel isn't going anywhere! The Baldus Pass VODs will keep going in the
+          meantime, and we’ll be back soon with more of our usual one-hour retro gaming challenges
+          and spectacular, uncoordinated failures.
+        </p>
+
+        <p>Thanks for being an awesome community, and we'll see you all very soon!</p>
+
+        <p>— The WASDump Team</p>
+      </article>
+      <!--       
       <strong>Weekdays Around 8:30 to 10:00 CST</strong><br />
       <small
         >Schedule is flexible and may change as time permits. Please check back for updates as the
         timing is still being finalized.</small
-      >
+      > -->
     </div>
     <div class="row justify-content-center">
       <div v-for="day in sortedSchedule" :key="day.name" class="col-md-4 mb-4">
