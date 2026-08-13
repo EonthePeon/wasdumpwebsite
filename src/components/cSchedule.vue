@@ -49,7 +49,7 @@ export default {
           name: 'Sunday',
           dayIndex: 0,
           game: 'Retro Races',
-          time: '8:00 PM CST',
+          time: 'Around 8:00 PM CST',
         },
         {
           name: 'Tuesday',
