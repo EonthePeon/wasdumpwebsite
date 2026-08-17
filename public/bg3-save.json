@@ -13,10 +13,19 @@
     "glut",
     "bulette",
     "bernard",
-    "phase-spider"
+    "phase-spider",
+    "inquisitor",
+    "gerringothe",
+    "thisobald-thorm",
+    "tskaan",
+    "marcus",
+    "karniss",
+    "shadow-shambling"
   ],
   "missed": [
-    "zhalk"
+    "zhalk",
+    "sarth-baretha",
+    "he-who-was"
   ],
   "details": {
     "zhalk": {
@@ -78,6 +87,42 @@
     "phase-spider": {
       "player": "Otto",
       "date": "2026-06-05"
+    },
+    "inquisitor": {
+      "player": "Elliot",
+      "date": "2026-06-23"
+    },
+    "sarth-baretha": {
+      "player": "",
+      "date": "2026-06-20"
+    },
+    "gerringothe": {
+      "player": "Otto",
+      "date": "2026-08-09"
+    },
+    "thisobald-thorm": {
+      "player": "Otto",
+      "date": "2026-08-09"
+    },
+    "he-who-was": {
+      "player": "",
+      "date": "2026-08-09"
+    },
+    "tskaan": {
+      "player": "Otto",
+      "date": "2026-08-09"
+    },
+    "marcus": {
+      "player": "Otto",
+      "date": "2026-07-05"
+    },
+    "karniss": {
+      "player": "Iain",
+      "date": "2026-07-01"
+    },
+    "shadow-shambling": {
+      "player": "Otto",
+      "date": "2026-07-20"
     }
   }
 }
