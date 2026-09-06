@@ -37,18 +37,25 @@
 </template>
 
 <script>
-import videosData from '../assets/videos.json';
-
 export default {
   name: 'cVods',
   data() {
     return {
-      activeVideoId: null
+      activeVideoId: null,
+      videosData: [],
+    }
+  },
+  async mounted() {
+    try {
+      const res = await fetch(`/videos.json?t=${Date.now()}`)
+      this.videosData = res.ok ? await res.json() : []
+    } catch (e) {
+      console.warn('Recent videos: could not load videos.json', e)
     }
   },
   computed: {
     videos() {
-      return videosData.map((video, index) => {
+      return this.videosData.map((video, index) => {
         const id = this.getVideoId(video.url);
         return {
           id: id || `vid-${index}`,

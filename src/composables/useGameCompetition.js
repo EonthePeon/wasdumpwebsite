@@ -131,11 +131,17 @@ export function useGameCompetition() {
       p.rank = rank
     })
 
+    // All players tied for 1st, comma-joined — not just the first one alphabetically.
+    const yearWinner = finalStandings
+      .filter((p) => p.rank === 1)
+      .map((p) => p.player)
+      .join(', ')
+
     return {
       consolesPlayed,
       gamesPlayed: gamesPlayed.sort((a, b) => new Date(b.competionDate) - new Date(a.competionDate)),
       finalStandings,
-      yearWinner: finalStandings.find((p) => p.rank === 1)?.player ?? '',
+      yearWinner,
     }
   }
 

@@ -34,6 +34,7 @@
     <cGamesAdmin v-else-if="tab === 'games'" ref="gamesAdmin" />
     <cConsolesAdmin v-else-if="tab === 'consoles'" />
     <cYearAdmin v-else-if="tab === 'years'" />
+    <cTimerImageAdmin v-else-if="tab === 'timer-image'" />
   </div>
 </template>
 
@@ -46,6 +47,7 @@ import cCompetitionEnd from '@/components/GameCompetition/cCompetitionEnd.vue'
 import cGamesAdmin from '@/components/GameCompetition/cGamesAdmin.vue'
 import cConsolesAdmin from '@/components/GameCompetition/cConsolesAdmin.vue'
 import cYearAdmin from '@/components/GameCompetition/cYearAdmin.vue'
+import cTimerImageAdmin from '@/components/GameCompetition/cTimerImageAdmin.vue'
 
 const gc = useGameCompetition()
 const { currentPlayerId } = useCurrentPlayer()
@@ -58,6 +60,7 @@ const tabs = [
   { id: 'games', label: 'Games' },
   { id: 'consoles', label: 'Consoles' },
   { id: 'years', label: 'Years' },
+  { id: 'timer-image', label: 'Timer Image' },
 ]
 
 // Default to the End Competition tab when one's already running.

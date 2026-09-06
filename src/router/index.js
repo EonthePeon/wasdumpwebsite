@@ -30,6 +30,11 @@ const router = createRouter({
       name: 'GameCompetitionAdmin',
       component: () => import('@/views/GameCompetitionAdminView.vue'),
     },
+    {
+      path: '/videos/admin',
+      name: 'VideosAdmin',
+      component: () => import('@/views/VideosAdminView.vue'),
+    },
   ],
   // Add this to handle scrolling to hash links and fixing navbar overlap
   scrollBehavior(to, from, savedPosition) {

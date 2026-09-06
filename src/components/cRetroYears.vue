@@ -25,11 +25,11 @@
             </span>
             <span class="badge bg-warning text-dark ms-3 fs-5 px-4 py-2 rounded-pill shadow">
               <i class="bi bi-trophy-fill me-1"></i>
-              <template v-if="Array.isArray(year.yearWinner) && year.yearWinner.length > 1">
-                Winners: {{ year.yearWinner.join(', ') }}
+              <template v-if="year.yearWinner.includes(',')">
+                Winners: {{ year.yearWinner }}
               </template>
               <template v-else>
-                Winner: {{ Array.isArray(year.yearWinner) ? year.yearWinner[0] : year.yearWinner }}
+                Winner: {{ year.yearWinner }}
               </template>
             </span>
           </button>
@@ -65,11 +65,7 @@
                       >
                         #{{ standing.rank }}
                         <i
-                          v-if="
-                            Array.isArray(year.yearWinner)
-                              ? year.yearWinner.includes(standing.player)
-                              : standing.rank === 1
-                          "
+                          v-if="standing.rank === 1"
                           class="bi bi-star-fill text-warning ms-1 small"
                         ></i>
                       </td>
@@ -236,17 +232,11 @@ export default {
     }
 
     // yearNumber here is the actual year label (e.g. "2025"), reused as-is from years.json.
+    // yearWinner already comes back comma-joined for ties from getEndOfYearResults.
     const pastYears = computed(() => {
       return gc.years.value
         .filter((y) => !y.isActive)
-        .map((y) => {
-          const results = gc.getEndOfYearResults(y.yearId)
-          const topPoints = results.finalStandings[0]?.totalPoints
-          const yearWinner = results.finalStandings
-            .filter((s) => s.totalPoints === topPoints)
-            .map((s) => s.player)
-          return { yearNumber: y.year, yearWinner, ...results }
-        })
+        .map((y) => ({ yearNumber: y.year, ...gc.getEndOfYearResults(y.yearId) }))
         .filter((y) => y.finalStandings.length > 0)
         .sort((a, b) => b.yearNumber - a.yearNumber)
     })

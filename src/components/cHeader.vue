@@ -57,6 +57,11 @@
               <i class="bi bi-gear me-2"></i>Race Admin
             </RouterLink>
           </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" :to="{ name: 'VideosAdmin' }">
+              <i class="bi bi-camera-reels me-2"></i>Videos Admin
+            </RouterLink>
+          </li>
         </ul>
         <div class="d-flex align-items-center">
           <a

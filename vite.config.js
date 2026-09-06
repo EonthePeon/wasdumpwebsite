@@ -1,5 +1,5 @@
 import { fileURLToPath, URL } from 'node:url'
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import fs from 'fs'
@@ -70,16 +70,117 @@ function gameDataSavePlugin() {
   }
 }
 
-export default defineConfig({
-  plugins: [
-    vue(),
-    vueDevTools(),
-    bg3SavePlugin(),
-    gameDataSavePlugin(),
-  ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+// Dev-only: lets the Videos admin page pull recent uploads server-side, so the
+// YouTube API key (from .env.local) never reaches the browser. Also saves the
+// curated selection to public/videos.json.
+function youtubePlugin(apiKey) {
+  return {
+    name: 'youtube-admin',
+    configureServer(server) {
+      server.middlewares.use(async (req, res, next) => {
+        if (req.method === 'GET' && req.url.startsWith('/api/youtube-recent')) {
+          if (!apiKey) {
+            res.writeHead(200, { 'Content-Type': 'application/json' })
+            res.end(JSON.stringify({ ok: false, error: 'YOUTUBE_API_KEY not set — see YOUTUBE_SETUP.md' }))
+            return
+          }
+          try {
+            const channelRes = await fetch(
+              `https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forHandle=@WASDump&key=${apiKey}`
+            )
+            const channelData = await channelRes.json()
+            const uploadsPlaylistId = channelData.items?.[0]?.contentDetails?.relatedPlaylists?.uploads
+            if (!uploadsPlaylistId) {
+              throw new Error(channelData.error?.message || 'Could not find @WASDump uploads playlist')
+            }
+
+            const videosRes = await fetch(
+              `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId=${uploadsPlaylistId}&key=${apiKey}`
+            )
+            const videosData = await videosRes.json()
+            if (videosData.error) throw new Error(videosData.error.message)
+
+            const videos = (videosData.items || []).map((item) => ({
+              videoId: item.snippet.resourceId.videoId,
+              title: item.snippet.title,
+              date: item.snippet.publishedAt,
+              thumbnail: item.snippet.thumbnails?.medium?.url || item.snippet.thumbnails?.default?.url,
+            }))
+            res.writeHead(200, { 'Content-Type': 'application/json' })
+            res.end(JSON.stringify({ ok: true, videos }))
+          } catch (e) {
+            res.writeHead(200, { 'Content-Type': 'application/json' })
+            res.end(JSON.stringify({ ok: false, error: e.message }))
+          }
+          return
+        }
+
+        if (req.method === 'POST' && req.url === '/api/save-videos') {
+          let body = ''
+          req.on('data', chunk => { body += chunk })
+          req.on('end', () => {
+            try {
+              const data = JSON.parse(body)
+              fs.writeFileSync(path.resolve(__dirname, 'public/videos.json'), JSON.stringify(data, null, 2))
+              res.writeHead(200, { 'Content-Type': 'application/json' })
+              res.end(JSON.stringify({ ok: true }))
+            } catch (e) {
+              res.writeHead(500, { 'Content-Type': 'application/json' })
+              res.end(JSON.stringify({ ok: false, error: e.message }))
+            }
+          })
+          return
+        }
+
+        next()
+      })
+    }
+  }
+}
+
+// Dev-only: lets the Race Admin page replace the competition timer's background image.
+function timerImagePlugin() {
+  return {
+    name: 'timer-image-upload',
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        if (req.method === 'POST' && req.url === '/api/upload-timer-image') {
+          const chunks = []
+          req.on('data', chunk => chunks.push(chunk))
+          req.on('end', () => {
+            try {
+              const savePath = path.resolve(__dirname, 'public/assets/images/game.jpg')
+              fs.writeFileSync(savePath, Buffer.concat(chunks))
+              res.writeHead(200, { 'Content-Type': 'application/json' })
+              res.end(JSON.stringify({ ok: true }))
+            } catch (e) {
+              res.writeHead(500, { 'Content-Type': 'application/json' })
+              res.end(JSON.stringify({ ok: false, error: e.message }))
+            }
+          })
+        } else {
+          next()
+        }
+      })
+    }
+  }
+}
+
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, __dirname, '')
+  return {
+    plugins: [
+      vue(),
+      vueDevTools(),
+      bg3SavePlugin(),
+      gameDataSavePlugin(),
+      youtubePlugin(env.YOUTUBE_API_KEY),
+      timerImagePlugin(),
+    ],
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('./src', import.meta.url))
+      },
     },
-  },
+  }
 })
