@@ -60,5 +60,9 @@ const tabs = [
   { id: 'years', label: 'Years' },
 ]
 
-onMounted(() => gc.loadAll())
+// Default to the End Competition tab when one's already running.
+onMounted(async () => {
+  await gc.loadAll()
+  if (gc.currentCompetition.value) tab.value = 'end'
+})
 </script>
