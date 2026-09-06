@@ -47,6 +47,16 @@
               <i class="bi bi-trophy me-2"></i>Baldur's Pass Boss Tracker
             </a>
           </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" :to="{ name: 'CompetitionTimer' }">
+              <i class="bi bi-stopwatch me-2"></i>Timer
+            </RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" :to="{ name: 'GameCompetitionAdmin' }">
+              <i class="bi bi-gear me-2"></i>Race Admin
+            </RouterLink>
+          </li>
         </ul>
         <div class="d-flex align-items-center">
           <a
