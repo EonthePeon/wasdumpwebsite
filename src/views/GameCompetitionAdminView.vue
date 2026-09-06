@@ -8,6 +8,14 @@
           <option value="">Select player...</option>
           <option v-for="p in gc.players.value" :key="p.userId" :value="p.userId">{{ p.name }}</option>
         </select>
+        <button
+          v-if="tab === 'games'"
+          class="btn btn-primary"
+          :disabled="!currentPlayerId"
+          @click="gamesAdmin?.openAddModal()"
+        >
+          Add Game
+        </button>
       </div>
     </div>
 
@@ -23,7 +31,7 @@
 
     <cCompetitionStart v-if="tab === 'start'" />
     <cCompetitionEnd v-else-if="tab === 'end'" />
-    <cGamesAdmin v-else-if="tab === 'games'" />
+    <cGamesAdmin v-else-if="tab === 'games'" ref="gamesAdmin" />
     <cConsolesAdmin v-else-if="tab === 'consoles'" />
     <cYearAdmin v-else-if="tab === 'years'" />
   </div>
@@ -42,6 +50,7 @@ import cYearAdmin from '@/components/GameCompetition/cYearAdmin.vue'
 const gc = useGameCompetition()
 const { currentPlayerId } = useCurrentPlayer()
 const tab = ref('start')
+const gamesAdmin = ref(null)
 
 const tabs = [
   { id: 'start', label: 'Start Competition' },
