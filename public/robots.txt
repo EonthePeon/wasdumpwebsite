@@ -1,3 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /game-competition/admin
+Disallow: /videos/admin
+Disallow: /timer
 Sitemap: https://www.wasdump.com/sitemap.xml

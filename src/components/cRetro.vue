@@ -202,11 +202,8 @@
           @click="showPastYears = !showPastYears"
           role="button"
         >
-          <h3 class="mb-0 text-white"><i class="bi bi-archive me-2"></i>Previous Years</h3>
-          <i
-            class="bi fs-4 text-white"
-            :class="showPastYears ? 'bi-chevron-up' : 'bi-chevron-down'"
-          ></i>
+          <h5 class="mb-0 text-white"><i class="bi bi-archive me-2"></i>Previous Years</h5>
+          <i class="bi" :class="showPastYears ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
         </div>
         <div class="card-body bg-darker" v-if="showPastYears">
           <cRetroYears />

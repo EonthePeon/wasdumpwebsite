@@ -1,0 +1,13 @@
+# WASDump
+
+> Community hub for the WASDump Twitch/YouTube variety and retro-gaming channel: stream schedule, recent VODs, retro-race competition standings, and a Baldur's Gate 3 boss tracker.
+
+## Content
+
+- [Home](https://www.wasdump.com/): About the channel, stream schedule, recent videos, Pass & Play info, and current/past Retro Races standings.
+- [Boss Tracker](https://www.wasdump.com/boss-tracker): Tracks which Baldur's Gate 3 bosses have been slain or missed during the Baldur's Pass playthrough series.
+
+## Notes
+
+- Retro Races is a series where players blind-race through a randomly picked classic console game; standings and past-year results are shown on the home page.
+- `/game-competition/admin`, `/videos/admin`, and `/timer` are streamer-only tools, not public content.

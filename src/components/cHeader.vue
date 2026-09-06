@@ -29,38 +29,39 @@
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" :to="{ path: '/', hash: '#RecentVideos' }">
-              <i class="bi bi-camera-video me-2"></i>Recent Videos
+              <i class="bi bi-camera-video me-2"></i>Videos
             </RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" :to="{ path: '/', hash: '#PassAndPlay' }">
-              <i class="bi bi-award me-2"></i>Pass & Play
+              <i class="bi bi-award me-2"></i>Pass
             </RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" :to="{ path: '/', hash: '#RetroRaces' }">
-              <i class="bi bi-controller me-2"></i>Retro Races
+              <i class="bi bi-controller me-2"></i>Races
             </RouterLink>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" @click.prevent="navigateToBossTracker">
-              <i class="bi bi-trophy me-2"></i>Baldur's Pass Boss Tracker
+              <i class="bi bi-trophy me-2"></i>Bosses
             </a>
           </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link" :to="{ name: 'CompetitionTimer' }">
-              <i class="bi bi-stopwatch me-2"></i>Timer
-            </RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link" :to="{ name: 'GameCompetitionAdmin' }">
-              <i class="bi bi-gear me-2"></i>Race Admin
-            </RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link" :to="{ name: 'VideosAdmin' }">
-              <i class="bi bi-camera-reels me-2"></i>Videos Admin
-            </RouterLink>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-gear me-2"></i>Admin
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li>
+                <RouterLink class="dropdown-item" :to="{ name: 'CompetitionTimer' }">Timer</RouterLink>
+              </li>
+              <li>
+                <RouterLink class="dropdown-item" :to="{ name: 'GameCompetitionAdmin' }">Competitions</RouterLink>
+              </li>
+              <li>
+                <RouterLink class="dropdown-item" :to="{ name: 'VideosAdmin' }">Videos</RouterLink>
+              </li>
+            </ul>
           </li>
         </ul>
         <div class="d-flex align-items-center">
