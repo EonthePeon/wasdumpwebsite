@@ -1,0 +1,810 @@
+[
+  {
+    "gameId": "818e797b-651f-4da9-b022-034ee168b1fe",
+    "game": "Duke Nuken 64",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "63ff0715-86a0-4c6a-aa71-09c3d09179ef",
+    "game": "Jaws",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "df5071c8-5842-4cd0-bcf0-0acc8d1ea8d0",
+    "game": "DuckTales",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "8bb8840a-1f68-4e47-bed5-0f96c057a99f",
+    "game": "Perfect Dark",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "dd46fb13-4ac3-49a6-867e-1271eefc7829",
+    "game": "Chip and Dale II",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "852246fc-e4d1-4f2c-a34c-150b2ca62e70",
+    "game": "Extreme G 2",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "473bf633-366c-404e-9ebf-18eb23ed186b",
+    "game": "Starfox 64",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "a7cdc811-98ff-48b4-8640-1a637ac22db3",
+    "game": "Balloon Fight",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": false
+  },
+  {
+    "gameId": "224f194c-5cb1-42fd-ac93-1c0128f946a6",
+    "game": "Paperboy 64",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "85f0b9ab-07fc-4f41-8ca4-1c0c02f19ec3",
+    "game": "Super Pitfall",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "627cd366-82bf-4d24-8cff-1ca74e186afd",
+    "game": "Little Samson",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": false
+  },
+  {
+    "gameId": "e3f77af5-74c7-4411-9183-20a4097cafcd",
+    "game": "Dragon\u0027s Lair",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "a0875f11-a9ab-40a4-ab6f-20ca1113b570",
+    "game": "F-Zero",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "34774584-9a36-4559-91b0-21d8c880cc19",
+    "game": "Star Wars",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "e9bd55ee-dfcf-496d-a960-296ba8b86625",
+    "game": "Zelda II",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": false
+  },
+  {
+    "gameId": "de4525e3-8f22-4eb6-bdaf-29a9d414155d",
+    "game": "Final Fantasy 6",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "72bcf718-ae3e-4c86-8bd5-2e47f3bc2b75",
+    "game": "Lufia",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "ff83d15d-a4bd-4429-9fcc-3156f646b557",
+    "game": "3 Ninjas Kick Back",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "3d59a257-00ae-4198-9acc-372ef96bd993",
+    "game": "Olympic Summer Games",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "f9f9f781-9ec1-4e38-b84e-37c7b21c5dab",
+    "game": "Superman 64",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "ff2b7a87-47a1-4345-9d3c-38cf67a691aa",
+    "game": "Carmaggedon 64",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "66759f06-7d51-4424-9898-3b3f9242784d",
+    "game": "Star Wars Episode 1: Racer",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "226d80d2-f544-44b3-9abd-3b56d456e22f",
+    "game": "Extreme G",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "6766f5b4-dbdd-4c20-9e9a-3f0a74f39242",
+    "game": "Tetris",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "83676203-0063-4d7b-ac9f-404d8d67f7b8",
+    "game": "Pittfighter",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "2de11718-5b9e-4d97-b4f8-407cfecf5843",
+    "game": "Mission Impossible",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "53d15971-619a-4aae-be66-41965a4e71fe",
+    "game": "Zelda OOT",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "8857bda4-5079-47d7-a0e2-41fa934685c1",
+    "game": "Cool World",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "4860ad0d-f8e2-4a4c-b3c8-4423e44076c2",
+    "game": "Batman The Video Game",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "e7104296-4218-4033-8f3c-498f041192f0",
+    "game": "Tony Hawk Pro Skater 2",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "353b6064-44c5-479f-b27f-49b7fda4c59c",
+    "game": "The Great Circus Mystery With Micky and Minni",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "87b75d20-add0-4086-95c6-4b2aec44aafc",
+    "game": "Rygar",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "4d3a228f-2971-425a-84f4-4b5058ff9866",
+    "game": "Mario Kart 64",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": false
+  },
+  {
+    "gameId": "e8d70c2b-28b5-4604-a535-4c3c069ce03c",
+    "game": "U Mortal Kombat 3",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": false
+  },
+  {
+    "gameId": "fb391b8e-bab1-4e57-91e3-4eef83812178",
+    "game": "Snowboard Kids",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": false
+  },
+  {
+    "gameId": "82d2cbcc-84a2-429c-98b1-562d2219ce81",
+    "game": "Super Troll Islands",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "91889d39-0351-4ea5-aa80-563127b12466",
+    "game": "Quake 2",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": true,
+    "archive": false
+  },
+  {
+    "gameId": "bbdc1973-20fc-487f-a4c1-59a55300aa2c",
+    "game": "King\u0027s Quest V",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "acbfe1f4-a09b-4e4b-81a9-5c7c392af7cd",
+    "game": "Jungle Strike",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "d6bcea68-d010-47ca-b147-5e318478aa6e",
+    "game": "Snake Rattle and Roll",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "edb5d944-196c-43b7-8e46-5e3bad67894b",
+    "game": "Doom 64",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "0595a663-effe-4f1c-8889-5f154972467b",
+    "game": "Star Wars Rogue Squadron",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "c87070b4-813c-4452-b7a7-670f3d7fbb81",
+    "game": "Final Fantasy 1",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "a3abf400-b01b-4ccf-b47e-6c30e0884919",
+    "game": "GoldenEye",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "dbf817f9-4a27-459d-a43f-6d5f6e76d400",
+    "game": "Nightmare Creatures",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "81e64440-07b5-4866-a953-6f85f73a18dd",
+    "game": "Cruis\u0027n World",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "f2c5ef93-b83d-4287-950d-747369f664f4",
+    "game": "Killer Instinict",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "c70982d7-55f1-48f2-9846-74d09a850caf",
+    "game": "The Adventures of Bayou Billy",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "d8724110-d23e-4655-836c-7581e2dab8f2",
+    "game": "Star Wars Shadows of the Empire",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "4fcb4128-e23b-4b3f-a7c2-7651c58d674e",
+    "game": "1080 Snowboarding ",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "bd55f0d1-d65e-4c5a-aa43-77cfc4d113bb",
+    "game": "Paperboy",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "2c828df8-2a1b-4c85-86a5-787b5ae87c76",
+    "game": "Prince of Persia",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "1591c194-7862-4557-b176-80d01e073e65",
+    "game": "Rock n\u0027 Roll Racing",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "8fd7a23a-566d-45e6-be70-86dc0d7316e2",
+    "game": "Prince of Perisa",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "429c2eee-4dcc-47d0-801a-88914a288102",
+    "game": "Resident Evil 2",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "d9d44340-cc48-4441-9fd4-8ed3e8e1e049",
+    "game": "Pilot Wings",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "a063e471-9857-44ae-bc9f-8edfbcc57304",
+    "game": "Home Alone",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "2064a565-6682-4f90-a359-96c65ec27da6",
+    "game": "Wave Race",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "541eadb4-3e60-4b8c-9318-972b28c4d7b6",
+    "game": "TMNT ",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "ba0d1be8-7a3f-4260-aa11-9aa37c431008",
+    "game": "Little Ninja Brothers",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "9bf71192-6e10-41e3-a7c0-9d5696d3c892",
+    "game": "Kid Icarus",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": true,
+    "archive": false
+  },
+  {
+    "gameId": "9da28fe3-f350-4837-b901-9f7d7d29b51d",
+    "game": "Super Mario Bros 3",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "9868ffc8-a971-42ae-8675-a0afaa4f5775",
+    "game": "Megaman 5",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "d46592ea-cf5b-4d9b-b898-a38db71dc894",
+    "game": "Super Star Wars",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": true,
+    "archive": false
+  },
+  {
+    "gameId": "f5609325-54e0-4f33-9cdd-a562dbb59617",
+    "game": "Jackie Chan\u0027s Action Kung Fu",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "0c48b8c6-2d60-49ec-acd3-a726da041ccb",
+    "game": "BASS Master Classic",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "f1b360e5-cd14-403b-b8f0-a85aee1339d1",
+    "game": "Jurassic Park",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "f91935b8-405f-44bd-bdec-a8e09d52148c",
+    "game": "Super Mario World",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "3fa61b09-7a25-4754-952d-aa2c26bd5098",
+    "game": "Last Bible III",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "ed7bd73a-c024-4533-9ce1-aae34981b560",
+    "game": "Double Dragon",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "811b36fb-feb1-4370-b18d-ab676d30eeae",
+    "game": "Super Metroid",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "aa80febf-e929-4d2a-9e84-b4e3795409b7",
+    "game": "The Lion King",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "70f2a2ef-25f1-405a-9494-b603f19856ff",
+    "game": "Ninja Gaiden",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "f5fdd489-10e3-428f-a7da-bfaaecb3da7d",
+    "game": "Mario 64",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "1919ede4-9885-48eb-b770-c2ab1a7df505",
+    "game": "Solmons Key 2",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "e81ded78-196a-4b2d-9808-c32344b1555d",
+    "game": "Gex",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "96cf39d3-d2eb-497f-90e9-c5c6f705d0e4",
+    "game": "Fighting Force 64",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "87482dd2-2896-4569-928f-ccded0c67f52",
+    "game": "Contra 3 The Alien Wars",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "f1d50b11-2cc2-469e-acd6-cf42639d76cc",
+    "game": "Xena",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": false
+  },
+  {
+    "gameId": "18a6c2f0-7635-4690-b413-d21811e7712b",
+    "game": "Ice Climber",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "6900c0e7-4441-4b10-bd56-d2c16e8fc520",
+    "game": "Street Racer",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": false
+  },
+  {
+    "gameId": "ab0a6c99-51a2-4070-8c65-d4077bb79963",
+    "game": "Snow Bros",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "1ae10568-bda3-43f0-a494-d46037a688db",
+    "game": "NBA Hangtime",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "399bcc2a-811b-445a-8d1e-d8046f76672e",
+    "game": "Asterisk and Obliques",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "7b7a036b-3512-4763-a92f-d8adc769b751",
+    "game": "John Romero\u0027s Daikatana",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "1a100fa7-e9ff-4edb-bf8b-da724c5d0c01",
+    "game": "Zelda A Link to The Past",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "d17aac57-6c79-4d06-94c5-ddbb9c8d2a7d",
+    "game": "Secret of Mana",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "b439eacd-618d-4f1d-988c-dedad49536ae",
+    "game": "Super Mario Kart",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "5b895261-ebdf-4ed5-ab16-e48fabac50af",
+    "game": "Fester\u0027s Quest",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "c65b6542-5b8d-4bb6-8b38-e703b84dac72",
+    "game": "The World Is Not Enough 007",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "50be7319-d052-49d4-8302-ecba7eed43b6",
+    "game": "Castlevania",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "ae74af40-abf6-4df9-9ecb-eee14f8464f1",
+    "game": "Metal Marines",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "a599bd20-46b0-4664-98d6-f16d082e39b7",
+    "game": "Golf",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "ba08c08d-d7a1-4ce4-bb2a-f176713f2466",
+    "game": "Donkey Kong Country",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "de082f3f-22a8-490d-9302-f3a9fb12241a",
+    "game": "Wing Commander",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "07146b91-6fa0-40b1-9897-f4f276d7ccb6",
+    "game": "Glover ",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "554881d2-39df-4c03-a8f2-f4feec11a5b6",
+    "game": "Rampage: World Tour",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "aec38ad7-d298-4c6c-b94c-f574e5f5ced4",
+    "game": "The Jungle Book",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": true,
+    "archive": false
+  },
+  {
+    "gameId": "8990c458-e4b1-46a5-a4c2-f61cb6caefb2",
+    "game": "Secret of Evermore",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+    "finished": true,
+    "archive": true
+  },
+  {
+    "gameId": "0b2b7289-c8b3-4e57-94a4-f6c2d02c9ed1",
+    "game": "South Park",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+    "finished": false,
+    "archive": false
+  },
+  {
+    "gameId": "f8d5c4c0-789e-4934-8a3a-fb8edea6c1ea",
+    "game": "Super Mario Bros",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+    "finished": false,
+    "archive": false
+  }
+]

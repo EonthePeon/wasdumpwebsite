@@ -1,0 +1,1478 @@
+[
+  {
+    "competitionId": "94f9a4da-cb22-4ef4-9599-0300dffa90d5",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "8990c458-e4b1-46a5-a4c2-f61cb6caefb2",
+    "playerCount": 3,
+    "competionDate": "2025-11-09T21:51:08.437",
+    "active": false,
+    "complete": true,
+    "goal": "story progress?",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "2acc9ee1-560a-4fa2-934c-0380ddeecba4",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "5b895261-ebdf-4ed5-ab16-e48fabac50af",
+    "playerCount": 3,
+    "competionDate": "2025-08-24T17:15:00.313",
+    "active": false,
+    "complete": true,
+    "goal": "Most Bosses / Levels???",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "a8757cd9-f86c-47eb-9a44-0abf29ae4489",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "1591c194-7862-4557-b176-80d01e073e65",
+    "playerCount": 2,
+    "competionDate": "2025-04-06T00:00:00",
+    "active": false,
+    "complete": true,
+    "goal": "Get the least points! Points are based on race position, and we\u2019ll see who can finish with the lowest score",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "42592584-4855-4605-882e-0bc2be40ebf7",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "ff83d15d-a4bd-4429-9fcc-3156f646b557",
+    "playerCount": 3,
+    "competionDate": "2025-06-01T15:55:14.62",
+    "active": false,
+    "complete": true,
+    "goal": "Most Levels?",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 2,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "98bc4c7b-9dfb-4961-ad1c-0d996d37cf5a",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "aec38ad7-d298-4c6c-b94c-f574e5f5ced4",
+    "playerCount": 3,
+    "competionDate": "2026-08-02T21:14:16.89",
+    "active": false,
+    "complete": true,
+    "goal": "Most Progress ",
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "944d0efd-58ef-4a6f-8845-157fa31bd2d6",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "edb5d944-196c-43b7-8e46-5e3bad67894b",
+    "playerCount": 3,
+    "competionDate": "2025-04-27T00:00:00",
+    "active": false,
+    "complete": true,
+    "goal": "Bring It On - Most Levels Finished",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "586aea7f-ec0f-4dc6-a32a-19bdb48f5846",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "e9bd55ee-dfcf-496d-a960-296ba8b86625",
+    "playerCount": 3,
+    "competionDate": "2026-05-24T08:33:49.31",
+    "active": false,
+    "complete": true,
+    "goal": "Most Progress?",
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "0f52ba2b-e4d1-402f-a99f-1d0adb8980b3",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "8857bda4-5079-47d7-a0e2-41fa934685c1",
+    "playerCount": 3,
+    "competionDate": "2026-01-04T22:52:02.43",
+    "active": false,
+    "complete": true,
+    "goal": "Most levels",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 2
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 1
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "051093e2-6744-4585-8e26-318b74873799",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "226d80d2-f544-44b3-9abd-3b56d456e22f",
+    "playerCount": 3,
+    "competionDate": "2026-03-15T21:07:42.127",
+    "active": false,
+    "complete": true,
+    "goal": "Most Races Won",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 3,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "9b1bc826-adab-42a5-8cd8-33fac6195f77",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "d46592ea-cf5b-4d9b-b898-a38db71dc894",
+    "playerCount": 3,
+    "competionDate": "2026-04-05T21:33:10.793",
+    "active": false,
+    "complete": true,
+    "goal": "Most Progress",
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "5eaee1e3-4755-4b23-848f-40fa495ac7d7",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "a063e471-9857-44ae-bc9f-8edfbcc57304",
+    "playerCount": 3,
+    "competionDate": "2025-05-18T00:00:00",
+    "active": false,
+    "complete": true,
+    "goal": "Most Levels",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "02cee5c6-0fe4-4829-b44c-43c69a1ea70d",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "3d59a257-00ae-4198-9acc-372ef96bd993",
+    "playerCount": 3,
+    "competionDate": "2025-11-14T22:11:56.87",
+    "active": false,
+    "complete": true,
+    "goal": "Most Gold?",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 2,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "b2677c5d-f672-43e0-a75e-469b0acfc9ad",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "e3f77af5-74c7-4411-9183-20a4097cafcd",
+    "playerCount": 3,
+    "competionDate": "2025-10-31T22:48:24.547",
+    "active": false,
+    "complete": true,
+    "goal": "Level Progress",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "b2606848-612c-42ab-8af1-47337932e129",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "83676203-0063-4d7b-ac9f-404d8d67f7b8",
+    "playerCount": 3,
+    "competionDate": "2026-02-08T21:15:22.8",
+    "active": false,
+    "complete": true,
+    "goal": "Most People Beat Up",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "5590143d-5fe9-4f76-a8bd-50f0049c7624",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "f2c5ef93-b83d-4287-950d-747369f664f4",
+    "playerCount": 3,
+    "competionDate": "2025-08-31T17:22:12.643",
+    "active": false,
+    "complete": true,
+    "goal": "Uhhhh Most Guys Dead",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 1
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 3,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "a2217430-bb42-4f38-9e5c-55d0cc9b5174",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "85f0b9ab-07fc-4f41-8ca4-1c0c02f19ec3",
+    "playerCount": 2,
+    "competionDate": "2025-03-31T01:00:20.377",
+    "active": false,
+    "complete": true,
+    "goal": "High Score After 1 Hour",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "1592b619-6f14-464f-b2d5-57c39abf8bcc",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "72bcf718-ae3e-4c86-8bd5-2e47f3bc2b75",
+    "playerCount": 3,
+    "competionDate": "2025-11-28T22:32:59.32",
+    "active": false,
+    "complete": true,
+    "goal": "Story Progress",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "edc7c3ef-44c8-4c2f-83bd-611bdf892a62",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "3fa61b09-7a25-4754-952d-aa2c26bd5098",
+    "playerCount": 3,
+    "competionDate": "2026-01-09T01:13:25.623",
+    "active": false,
+    "complete": true,
+    "goal": "Progress?",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 2,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "9b789216-874a-4577-849e-6416a9130668",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "f1d50b11-2cc2-469e-acd6-cf42639d76cc",
+    "playerCount": 3,
+    "competionDate": "2026-04-19T21:03:55.963",
+    "active": false,
+    "complete": true,
+    "goal": "Most Kills I guess ",
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 3,
+        "bonusPoints": 1
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 1
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 1
+      }
+    ]
+  },
+  {
+    "competitionId": "9d3ce149-e524-48ae-a793-69029b21b8a6",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "d8724110-d23e-4655-836c-7581e2dab8f2",
+    "playerCount": 3,
+    "competionDate": "2025-09-14T16:46:04.407",
+    "active": false,
+    "complete": true,
+    "goal": "Mosts Levels",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "8c75bf5a-07c5-47ad-9fc5-6ef453d754ce",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "1ae10568-bda3-43f0-a494-d46037a688db",
+    "playerCount": 3,
+    "competionDate": "2026-02-01T21:05:27.083",
+    "active": false,
+    "complete": true,
+    "goal": "Most WIns? / Points?",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": -1
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "8d782570-0922-46a3-ab81-6fe7bedc5164",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "9bf71192-6e10-41e3-a7c0-9d5696d3c892",
+    "playerCount": 3,
+    "competionDate": "2026-08-16T21:31:18.06",
+    "active": false,
+    "complete": true,
+    "goal": "Most Progess",
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 2,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "61736eb2-6f80-4d3b-baf4-6fedb1c67621",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "e8d70c2b-28b5-4604-a535-4c3c069ce03c",
+    "playerCount": 3,
+    "competionDate": "2026-07-19T09:04:56.083",
+    "active": false,
+    "complete": true,
+    "goal": "Whoever WIns the MOst",
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "ec6d91ff-7c19-425f-8ea2-7873a61d53a5",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "1a100fa7-e9ff-4edb-bf8b-da724c5d0c01",
+    "playerCount": 3,
+    "competionDate": "2025-05-18T07:06:05.187",
+    "active": false,
+    "complete": true,
+    "goal": "Most Dungeons, Then Hearts, Then Money",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "446e6bd1-923b-4e11-b2c5-7aaa0adff24f",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "9da28fe3-f350-4837-b901-9f7d7d29b51d",
+    "playerCount": 3,
+    "competionDate": "2025-10-16T23:30:09.903",
+    "active": false,
+    "complete": true,
+    "goal": "Most Levels",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "d5d8f3e8-1454-48d6-8af6-8008049ff7ab",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "7b7a036b-3512-4763-a92f-d8adc769b751",
+    "playerCount": 3,
+    "competionDate": "2025-07-27T00:00:00",
+    "active": false,
+    "complete": true,
+    "goal": "Most Levels?",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "6e16d43d-93c3-464b-a2d1-80ab510b69c8",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "852246fc-e4d1-4f2c-a34c-150b2ca62e70",
+    "playerCount": 3,
+    "competionDate": "2025-10-24T22:36:07.41",
+    "active": false,
+    "complete": true,
+    "goal": "Most Levels?",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "0910cbd7-d5ab-4231-9013-829882c2b173",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "4d3a228f-2971-425a-84f4-4b5058ff9866",
+    "playerCount": 3,
+    "competionDate": "2026-04-13T21:42:05.07",
+    "active": false,
+    "complete": true,
+    "goal": "Most Gold 150cc",
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "95861446-e287-4173-94b1-830190afd2b1",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "63ff0715-86a0-4c6a-aa71-09c3d09179ef",
+    "playerCount": 3,
+    "competionDate": "2025-08-17T17:09:46.68",
+    "active": false,
+    "complete": true,
+    "goal": "??",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "798aea9e-f221-4a93-90dd-86b497c6bc0b",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "dd46fb13-4ac3-49a6-867e-1271eefc7829",
+    "playerCount": 2,
+    "competionDate": "2025-06-22T00:00:00",
+    "active": false,
+    "complete": true,
+    "goal": "Level",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 1
+      }
+    ]
+  },
+  {
+    "competitionId": "2c1a4c95-6f57-405a-9beb-87eaf893779f",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "473bf633-366c-404e-9ebf-18eb23ed186b",
+    "playerCount": 3,
+    "competionDate": "2025-07-20T00:00:00",
+    "active": false,
+    "complete": true,
+    "goal": "Most Levels / Most Kills ",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 1,
+        "bonusPoints": 1
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 2,
+        "bonusPoints": 1
+      }
+    ]
+  },
+  {
+    "competitionId": "8e4a56af-4279-4576-80ee-891ed583dbe2",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "82d2cbcc-84a2-429c-98b1-562d2219ce81",
+    "playerCount": 3,
+    "competionDate": "2025-11-19T22:07:09.993",
+    "active": false,
+    "complete": true,
+    "goal": "Most Levels",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "14bb1859-40c2-48f6-8ce4-894517864d72",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "0595a663-effe-4f1c-8889-5f154972467b",
+    "playerCount": 3,
+    "competionDate": "2026-02-15T21:12:31.13",
+    "active": false,
+    "complete": true,
+    "goal": "Most Levels ",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "d226bcc0-b42c-4874-bacc-8f5190e33ce1",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "2c828df8-2a1b-4c85-86a5-787b5ae87c76",
+    "playerCount": 3,
+    "competionDate": "2025-10-03T22:12:17.623",
+    "active": false,
+    "complete": true,
+    "goal": "Get As Far As Possible",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "38831163-c762-49a9-ad1a-97ba273ab7d5",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "df5071c8-5842-4cd0-bcf0-0acc8d1ea8d0",
+    "playerCount": 3,
+    "competionDate": "2025-05-04T07:13:41.497",
+    "active": false,
+    "complete": true,
+    "goal": "Most Levels Done. ",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 1
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 3,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "b1099978-7ed6-4ef0-a673-a5413cf3edb7",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "0c48b8c6-2d60-49ec-acd3-a726da041ccb",
+    "playerCount": 3,
+    "competionDate": "2025-12-30T22:52:02.43",
+    "active": false,
+    "complete": true,
+    "goal": "Most Fish??",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "49664795-20f9-4bb4-a39a-a76aadc61588",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "34774584-9a36-4559-91b0-21d8c880cc19",
+    "playerCount": 3,
+    "competionDate": "2025-05-25T08:51:51.053",
+    "active": false,
+    "complete": true,
+    "goal": "Most Levels",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "c4c7dea9-9c6a-460a-82c7-a7eb0450bb86",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "c70982d7-55f1-48f2-9846-74d09a850caf",
+    "playerCount": 3,
+    "competionDate": "2026-01-18T18:16:18.8",
+    "active": false,
+    "complete": true,
+    "goal": "Most Stages",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "9956e0fe-83f8-4b55-9907-aa20156c9027",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "6900c0e7-4441-4b10-bd56-d2c16e8fc520",
+    "playerCount": 3,
+    "competionDate": "2026-08-12T21:06:04.5",
+    "active": false,
+    "complete": true,
+    "goal": "First Places?",
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 2,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "3931139d-a1f7-4985-910e-aa62211f30ff",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "70f2a2ef-25f1-405a-9494-b603f19856ff",
+    "playerCount": 2,
+    "competionDate": "2025-04-07T02:06:29.71",
+    "active": false,
+    "complete": true,
+    "goal": "Highest Stage. ",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "653c7d2c-45e3-4ad5-8cb8-ae5aa926fc4b",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "9868ffc8-a971-42ae-8675-a0afaa4f5775",
+    "playerCount": 3,
+    "competionDate": "2026-03-01T22:12:20.62",
+    "active": false,
+    "complete": true,
+    "goal": "Well Otto Wins... but most levels between Elliot and I",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "45de6a8c-a486-42cc-a0d9-b270fe88147d",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "a3abf400-b01b-4ccf-b47e-6c30e0884919",
+    "playerCount": 3,
+    "competionDate": "2025-04-13T21:06:41.53",
+    "active": false,
+    "complete": true,
+    "goal": "Story Mode - Most Levels - Secret Agent",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "4207bb8c-ae73-4710-ba30-b7e2732aa90c",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "ae74af40-abf6-4df9-9ecb-eee14f8464f1",
+    "playerCount": 3,
+    "competionDate": "2025-06-29T07:16:53.35",
+    "active": false,
+    "complete": true,
+    "goal": "Most Levels. ",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "07862fa9-475a-47d2-ae6d-ba3686f60ae6",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "bd55f0d1-d65e-4c5a-aa43-77cfc4d113bb",
+    "playerCount": 3,
+    "competionDate": "2026-03-08T21:16:20.36",
+    "active": false,
+    "complete": true,
+    "goal": "Most Days Finished?",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "0601433f-77de-4616-938d-be521105f33f",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "fb391b8e-bab1-4e57-91e3-4eef83812178",
+    "playerCount": 3,
+    "competionDate": "2026-06-07T08:21:55.533",
+    "active": false,
+    "complete": true,
+    "goal": "Most Progress ",
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "c1bf4254-6ca3-41f7-89b0-bf0c45e4e52e",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "ff2b7a87-47a1-4345-9d3c-38cf67a691aa",
+    "playerCount": 3,
+    "competionDate": "2025-06-22T17:23:27.51",
+    "active": false,
+    "complete": true,
+    "goal": "Most Levels?",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "7def8922-926f-44e7-b9e2-bf3d33a60af0",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "f9f9f781-9ec1-4e38-b84e-37c7b21c5dab",
+    "playerCount": 3,
+    "competionDate": "2026-03-17T21:07:00.067",
+    "active": false,
+    "complete": true,
+    "goal": "Most Progress",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "015a05f9-cc54-4164-a04e-ced5d7ae23f9",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "91889d39-0351-4ea5-aa80-563127b12466",
+    "playerCount": 3,
+    "competionDate": "2026-05-31T08:35:35.88",
+    "active": false,
+    "complete": true,
+    "goal": "Most Progress ",
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "20baadee-fad4-4c47-818a-cee7fbf00bda",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "627cd366-82bf-4d24-8cff-1ca74e186afd",
+    "playerCount": 3,
+    "competionDate": "2026-05-17T00:46:55.223",
+    "active": false,
+    "complete": true,
+    "goal": "Most Levels =)",
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 1
+      }
+    ]
+  },
+  {
+    "competitionId": "b753eefd-43de-40de-a388-d0b40019a6df",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "e81ded78-196a-4b2d-9808-c32344b1555d",
+    "playerCount": 3,
+    "competionDate": "2026-08-30T21:12:04.687",
+    "active": true,
+    "complete": false,
+    "goal": "Progress",
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "results": []
+  },
+  {
+    "competitionId": "b9971ac6-4e91-46c4-a080-d78e6f8f9fa2",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "87b75d20-add0-4086-95c6-4b2aec44aafc",
+    "playerCount": 3,
+    "competionDate": "2025-04-27T21:41:29.31",
+    "active": false,
+    "complete": true,
+    "goal": "High Score after 1 hour",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "a3a040b7-85e4-4bb1-8268-e004a89013bb",
+    "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
+    "gameId": "f5609325-54e0-4f33-9cdd-a562dbb59617",
+    "playerCount": 3,
+    "competionDate": "2026-01-06T17:44:44.227",
+    "active": false,
+    "complete": true,
+    "goal": "Most Levels ",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "4c0bdeea-1333-4ad0-a7e8-f5bb58686b5f",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "554881d2-39df-4c03-a8f2-f4feec11a5b6",
+    "playerCount": 3,
+    "competionDate": "2026-02-22T21:21:37.817",
+    "active": false,
+    "complete": true,
+    "goal": "Levles with Point as a Backup",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 3,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "682cbfbe-b121-459c-b853-ff5844b89cc3",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "81e64440-07b5-4866-a953-6f85f73a18dd",
+    "playerCount": 3,
+    "competionDate": "2025-08-17T08:05:32.047",
+    "active": false,
+    "complete": true,
+    "goal": "Most Levels?",
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 1,
+        "bonusPoints": 1
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      }
+    ]
+  }
+]

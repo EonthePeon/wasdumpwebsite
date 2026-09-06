@@ -1,0 +1,12 @@
+[
+  {
+    "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
+    "year": "2025",
+    "isActive": false
+  },
+  {
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "year": "2026",
+    "isActive": true
+  }
+]

@@ -223,10 +223,9 @@
 </template>
 
 <script>
-import { computed, ref } from 'vue'
-import standingsData from '../assets/standings.json'
-import currentData from '../assets/current.json'
-import cRetroYears from './cRetroYears.vue' // Import new component
+import { computed, ref, onMounted } from 'vue'
+import { useGameCompetition } from '@/composables/useGameCompetition'
+import cRetroYears from './cRetroYears.vue'
 
 export default {
   name: 'cRetro',
@@ -234,137 +233,30 @@ export default {
     cRetroYears,
   },
   setup() {
+    const gc = useGameCompetition()
     const showConsoles = ref(false)
     const showGames = ref(false)
-    const showPastYears = ref(false) // Toggle state for previous years
+    const showPastYears = ref(false)
 
-    const currentCompetition = currentData.Competition
+    onMounted(() => gc.loadAll())
 
+    // Current-year standings/games, computed live from competitions.json — no more hand-copied JSON snapshots.
     const localResults = computed(() => {
-      const data = standingsData
-      if (!data) return null
+      if (!gc.activeYear.value) return null
+      return gc.getEndOfYearResults(gc.activeYear.value.yearId)
+    })
 
-      const rawResults = data.Results || []
-      const rawStandings = data.Standings || []
-
-      // Helper to find scores/winners for a game
-      const getGameDetails = (game) => {
-        let maxPoints = -1
-        let winners = []
-
-        const scores = (game.Scores || [])
-          .map((s) => {
-            const p = s.Player ? s.Player.trim() : 'Unknown'
-            const points = s.Points !== undefined ? s.Points : 0
-            return { player: p, points: points, gotBonus: s.GotBonus }
-          })
-          .sort((a, b) => b.points - a.points)
-
-        scores.forEach((s) => {
-          if (s.points > maxPoints) {
-            maxPoints = s.points
-            winners = [s.player]
-          } else if (s.points === maxPoints) {
-            winners.push(s.player)
-          }
-        })
-
-        return { scores, winners }
-      }
-
-      // 1. Calculate aggregated stats from Results (Wins, Bonuses)
-      const playerStats = {}
-      rawResults.forEach((game) => {
-        const { scores, winners } = getGameDetails(game)
-
-        scores.forEach((s) => {
-          if (!playerStats[s.player]) playerStats[s.player] = { wins: 0, bonuses: 0 }
-          if (s.gotBonus) playerStats[s.player].bonuses++
-        })
-
-        winners.forEach((w) => {
-          if (!playerStats[w]) playerStats[w] = { wins: 0, bonuses: 0 }
-          playerStats[w].wins++
-        })
-      })
-
-      // 2. Final Standings
-      let finalStandings = rawStandings.map((s) => {
-        const p = s.Player ? s.Player.trim() : ''
-        return {
-          player: p,
-          totalPoints: s.Points,
-          totalWins: playerStats[p]?.wins || 0,
-          bonusCount: playerStats[p]?.bonuses || 0,
-        }
-      })
-
-      // Sort by points desc
-      finalStandings.sort((a, b) => b.totalPoints - a.totalPoints)
-      // Assign rank
-      finalStandings = finalStandings.map((s, i) => ({ ...s, rank: i + 1 }))
-
-      const yearWinner = finalStandings.length > 0 ? finalStandings[0].player : null
-
-      // 3. Games Played
-      const gamesPlayed = rawResults.map((game) => {
-        const { scores, winners } = getGameDetails(game)
-        return {
-          gameName: game.GameName,
-          console: game.System,
-          competionDate: game.CompetionDate,
-          winner: winners.join(', '),
-          scores: scores,
-        }
-      })
-
-      // 4. Consoles Played
-      const consolesMap = {}
-      rawResults.forEach((game) => {
-        const sys = game.System
-        if (!sys) return
-
-        if (!consolesMap[sys]) {
-          consolesMap[sys] = {
-            consoleName: sys,
-            gamesPlayedCount: 0,
-            playerWinsMap: {},
-          }
-        }
-        consolesMap[sys].gamesPlayedCount++
-
-        const { winners } = getGameDetails(game)
-        winners.forEach((w) => {
-          if (!consolesMap[sys].playerWinsMap[w]) consolesMap[sys].playerWinsMap[w] = 0
-          consolesMap[sys].playerWinsMap[w]++
-        })
-      })
-
-      const consolesPlayed = Object.values(consolesMap).map((c) => ({
-        consoleName: c.consoleName,
-        gamesPlayedCount: c.gamesPlayedCount,
-        playerWins: Object.entries(c.playerWinsMap)
-          .map(([player, wins]) => ({ player, wins }))
-          .sort((a, b) => b.wins - a.wins),
-      }))
-
-      // 5. Games Played By Console (grouped/sorted)
-      const gamesplayedbyconsole = [...gamesPlayed].sort((a, b) => {
-        const cA = a.console || ''
-        const cB = b.console || ''
-        return cA.localeCompare(cB)
-      })
-
+    const currentCompetition = computed(() => {
+      const c = gc.currentCompetition.value
+      if (!c) return null
       return {
-        yearWinner,
-        finalStandings,
-        consolesPlayed,
-        gamesPlayed,
-        gamesplayedbyconsole,
+        GameName: gc.gameName(c.gameId),
+        System: gc.consoleName(c.systemId),
+        Goal: c.goal,
+        CompetionDateString: new Date(c.competionDate).toLocaleDateString('en-US'),
       }
     })
 
-    // Calculate number of columns for consoles played (max 4 cols)
     const numConsoleCols = computed(() => {
       const consoles = localResults.value?.consolesPlayed || []
       return Math.max(1, Math.min(consoles.length, 4))

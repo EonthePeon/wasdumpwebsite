@@ -20,6 +20,16 @@ const router = createRouter({
       name: 'BossTracker',
       component: () => import('@/views/BossTrackerView.vue'),
     },
+    {
+      path: '/timer',
+      name: 'CompetitionTimer',
+      component: () => import('@/components/GameCompetition/cCompetitionTimer.vue'),
+    },
+    {
+      path: '/game-competition/admin',
+      name: 'GameCompetitionAdmin',
+      component: () => import('@/views/GameCompetitionAdminView.vue'),
+    },
   ],
   // Add this to handle scrolling to hash links and fixing navbar overlap
   scrollBehavior(to, from, savedPosition) {

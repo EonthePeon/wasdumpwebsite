@@ -208,14 +208,16 @@
 </template>
 
 <script>
-import { computed, ref } from 'vue'
-
-const pastYearModules = import.meta.glob('../assets/endofyear*.json', { eager: true })
+import { computed, ref, onMounted } from 'vue'
+import { useGameCompetition } from '@/composables/useGameCompetition'
 
 export default {
   name: 'cRetroYears',
   setup() {
+    const gc = useGameCompetition()
     const openGames = ref({}) // Tracks toggled state: { "2024-NES": true }
+
+    onMounted(() => gc.loadAll())
 
     const winnerColClass = (num) => {
       if (num === 1) return 'col-12'
@@ -224,147 +226,35 @@ export default {
       return 'col-md-3 col-sm-6'
     }
 
-    const toggleGames = (year, consoleName) => {
-      const key = `${year}-${consoleName}`
+    const toggleGames = (yearNumber, consoleName) => {
+      const key = `${yearNumber}-${consoleName}`
       openGames.value[key] = !openGames.value[key]
     }
 
-    const isGamesOpen = (year, consoleName) => {
-      return !!openGames.value[`${year}-${consoleName}`]
+    const isGamesOpen = (yearNumber, consoleName) => {
+      return !!openGames.value[`${yearNumber}-${consoleName}`]
     }
 
-    const processStandingsData = (data) => {
-      if (!data) return null
-      const root = data.EndOfYearResults || data
-      const rawResults = root.GamesPlayed || root.Results || root.results || []
-      const rawStandings = root.FinalStandings || root.Standings || root.standings || []
-      const consolesPlayedRaw = root.ConsolesPlayed || root.consolesPlayed || []
-
-      const getGameDetails = (game) => {
-        let maxPoints = -1
-        let winners = []
-        const scores = (game.Scores || game.scores || [])
-          .map((s) => ({
-            player: (s.Player || s.player || 'Unknown').trim(),
-            points: s.Points ?? s.points ?? 0,
-            gotBonus: s.GotBonus ?? s.gotBonus ?? false,
-          }))
-          .sort((a, b) => b.points - a.points)
-
-        scores.forEach((s) => {
-          if (s.points > maxPoints) {
-            maxPoints = s.points
-            winners = [s.player]
-          } else if (s.points === maxPoints && maxPoints !== -1) {
-            winners.push(s.player)
-          }
-        })
-        return { scores, winners }
-      }
-
-      const playerStats = {}
-      rawResults.forEach((game) => {
-        const { scores, winners } = getGameDetails(game)
-        scores.forEach((s) => {
-          if (!playerStats[s.player]) playerStats[s.player] = { wins: 0, bonuses: 0 }
-          if (s.gotBonus) playerStats[s.player].bonuses++
-        })
-        winners.forEach((w) => {
-          if (!playerStats[w]) playerStats[w] = { wins: 0, bonuses: 0 }
-          playerStats[w].wins++
-        })
-      })
-
-      let finalStandings = rawStandings.map((s) => {
-        const p = (s.Player || s.player || '').trim()
-        return {
-          player: p,
-          totalPoints: s.Points ?? s.points ?? s.TotalPoints ?? s.totalPoints ?? 0,
-          totalWins: s.TotalWins ?? s.totalWins ?? playerStats[p]?.wins ?? 0,
-          bonusCount: s.BonusCount ?? s.bonusCount ?? playerStats[p]?.bonuses ?? 0,
-        }
-      })
-
-      finalStandings.sort((a, b) => b.totalPoints - a.totalPoints)
-      // Assign ranks with ties (same points = same rank)
-      let lastPoints = null
-      let lastRank = 0
-      let skip = 0
-      finalStandings = finalStandings.map((s, i) => {
-        if (lastPoints === s.totalPoints) {
-          skip++
-          return { ...s, rank: lastRank }
-        } else {
-          lastRank = i + 1
-          lastPoints = s.totalPoints
-          skip = 0
-          return { ...s, rank: lastRank }
-        }
-      })
-
-      const consolesPlayed = consolesPlayedRaw
-        .map((c) => ({
-          consoleName: c.ConsoleName || c.consoleName,
-          playerWins: (c.PlayerWins || c.playerWins || [])
-            .map((pw) => ({
-              player: (pw.Player || pw.player || '').trim(),
-              wins: pw.Wins ?? pw.wins ?? 0,
-            }))
-            .sort((a, b) => b.wins - a.wins),
-        }))
-        .sort((a, b) => a.consoleName.localeCompare(b.consoleName))
-
-      // Find all players tied for first place
-      let yearWinner = 'Unknown'
-      if (finalStandings.length > 0) {
-        const topPoints = finalStandings[0].totalPoints
-        const winners = finalStandings
-          .filter((s) => s.totalPoints === topPoints)
-          .map((s) => s.player)
-        yearWinner = winners.length > 1 ? winners : winners[0]
-      }
-      return {
-        yearWinner,
-        finalStandings,
-        consolesPlayed,
-        rawResults, // Kept for the getGamesByConsole helper
-      }
-    }
-
+    // yearNumber here is the actual year label (e.g. "2025"), reused as-is from years.json.
     const pastYears = computed(() => {
-      const years = []
-      for (const path in pastYearModules) {
-        const data = pastYearModules[path].default || pastYearModules[path]
-        const match = path.match(/endofyear(\d+)\.json/i)
-        const yearNum = match ? parseInt(match[1]) : years.length + 1
-        if (data) {
-          const processed = processStandingsData(data)
-          if (processed && processed.finalStandings.length > 0) {
-            years.push({ yearNumber: yearNum, ...processed })
-          }
-        }
-      }
-      return years.sort((a, b) => b.yearNumber - a.yearNumber)
+      return gc.years.value
+        .filter((y) => !y.isActive)
+        .map((y) => {
+          const results = gc.getEndOfYearResults(y.yearId)
+          const topPoints = results.finalStandings[0]?.totalPoints
+          const yearWinner = results.finalStandings
+            .filter((s) => s.totalPoints === topPoints)
+            .map((s) => s.player)
+          return { yearNumber: y.year, yearWinner, ...results }
+        })
+        .filter((y) => y.finalStandings.length > 0)
+        .sort((a, b) => b.yearNumber - a.yearNumber)
     })
 
-    const getGamesByConsole = (yearNum, consoleName) => {
-      const yearData = pastYears.value.find((y) => y.yearNumber === yearNum)
+    const getGamesByConsole = (yearNumber, consoleName) => {
+      const yearData = pastYears.value.find((y) => y.yearNumber === yearNumber)
       if (!yearData) return []
-      return yearData.rawResults
-        .filter((g) => (g.Console || g.console) === consoleName)
-        .map((g) => {
-          const scores = g.Scores || g.scores || []
-          const max = Math.max(...scores.map((s) => s.Points ?? s.points ?? 0))
-          const winner = scores.find((s) => (s.Points ?? s.points) === max)
-          return {
-            gameName: g.GameName || g.gameName,
-            winner: winner ? winner.Player || winner.player : 'N/A',
-            scores: scores.map((s) => ({
-              player: s.Player || s.player,
-              points: s.Points ?? s.points,
-            })),
-          }
-        })
+      return yearData.gamesPlayed.filter((g) => g.console === consoleName)
     }
 
     return {
