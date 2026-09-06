@@ -2,6 +2,9 @@
   <div>
     <div class="row g-2 mb-3 align-items-center">
       <div class="col-md-3">
+        <input v-model="searchTerm" type="text" class="form-control" placeholder="Search games..." />
+      </div>
+      <div class="col-md-3">
         <select v-model="filterSystemId" class="form-select">
           <option value="">All Consoles</option>
           <option v-for="c in gc.consoles.value" :key="c.systemId" :value="c.systemId">{{ c.system }}</option>
@@ -65,6 +68,7 @@ import cModal from './cModal.vue'
 const gc = useGameCompetition()
 const { currentPlayerId } = useCurrentPlayer()
 
+const searchTerm = ref('')
 const filterSystemId = ref('')
 const showFinished = ref(false)
 const showArchived = ref(false)
@@ -77,6 +81,7 @@ const sortedGames = computed(() =>
     .filter((g) => !!g.archive === showArchived.value)
     .filter((g) => showFinished.value || !g.finished)
     .filter((g) => !filterSystemId.value || g.systemId === filterSystemId.value)
+    .filter((g) => g.game.toLowerCase().includes(searchTerm.value.trim().toLowerCase()))
     .sort((a, b) => gc.consoleName(a.systemId).localeCompare(gc.consoleName(b.systemId)) || a.game.localeCompare(b.game))
 )
 
