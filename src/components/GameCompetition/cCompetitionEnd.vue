@@ -17,6 +17,7 @@
     </div>
 
     <div v-if="placeError" class="alert alert-danger py-2">{{ placeError }}</div>
+    <p class="text-muted small">Leave everyone at "—" to end it without recording any results.</p>
     <button class="btn btn-success" :disabled="!!placeError" @click="finish">End Competition</button>
   </div>
 </template>
