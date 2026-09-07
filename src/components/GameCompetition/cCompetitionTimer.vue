@@ -51,7 +51,7 @@ export default {
     const timerRunning = ref(false)
     const timerText = ref('60:00')
 
-    // Sequentially light up the 5 start-lights, then fire the run after a random delay
+    // Sequentially light up the 5 start-lights, then go the instant the last one lands.
     function startTimerProcess() {
       preTimerStarted.value = true
       lights.value.forEach((light) => { light.isOn = false })
@@ -63,8 +63,7 @@ export default {
           currentIndex++
         } else {
           clearInterval(interval)
-          const randomDelay = Math.floor(Math.random() * 2500) + 500
-          setTimeout(startRunning, randomDelay)
+          startRunning()
         }
       }, 1000)
     }
