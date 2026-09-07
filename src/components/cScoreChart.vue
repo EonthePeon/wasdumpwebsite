@@ -1,9 +1,14 @@
 <template>
-  <div class="mt-3">
-    <button class="btn btn-info btn-sm" @click="showChart = !showChart">
-      {{ showChart ? 'Hide' : 'Show' }} Chart
-    </button>
-    <div v-show="showChart" class="mt-3">
+  <div class="card border-secondary">
+    <div
+      class="card-header cursor-pointer d-flex justify-content-between align-items-center bg-dark"
+      @click="showChart = !showChart"
+      role="button"
+    >
+      <h5 class="mb-0 text-white"><i class="bi bi-graph-up me-2"></i>Score Progression</h5>
+      <i class="bi" :class="showChart ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+    </div>
+    <div class="card-body bg-darker" v-if="showChart">
       <canvas ref="chartCanvas"></canvas>
     </div>
   </div>
@@ -17,7 +22,7 @@ const showChart = ref(false)
 const chartCanvas = ref(null)
 let chartInstance = null
 
-// Chart.js is ~200KB - only pull it in once someone actually clicks "Show Chart".
+// Chart.js is ~200KB - only pull it in once someone actually clicks the header.
 async function buildChart() {
   const games = props.gamesPlayed
   if (!games?.length || !chartCanvas.value) return
@@ -70,3 +75,7 @@ watch(showChart, (val) => {
   if (val) nextTick(buildChart)
 })
 </script>
+
+<style scoped>
+.bg-darker { background-color: #121212; }
+</style>

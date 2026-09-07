@@ -49,9 +49,6 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="px-4 pb-3">
-                  <cScoreChart :games-played="localResults.gamesPlayed" />
-                </div>
               </div>
             </div>
           </div>
@@ -83,6 +80,12 @@
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="row mt-4" v-if="localResults.gamesPlayed && localResults.gamesPlayed.length">
+          <div class="col-12">
+            <cScoreChart :games-played="localResults.gamesPlayed" />
           </div>
         </div>
 

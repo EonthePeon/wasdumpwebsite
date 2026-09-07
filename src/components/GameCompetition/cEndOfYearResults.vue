@@ -28,9 +28,12 @@
               </div>
             </div>
           </div>
-          <cScoreChart :games-played="results.gamesPlayed" />
         </div>
       </div>
+    </section>
+
+    <section v-if="results.gamesPlayed?.length" class="mb-4">
+      <cScoreChart :games-played="results.gamesPlayed" />
     </section>
 
     <section v-if="results.consolesPlayed?.length" class="mb-4">

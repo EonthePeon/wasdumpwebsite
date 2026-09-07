@@ -82,6 +82,9 @@
                   </tbody>
                 </table>
               </div>
+            </div>
+
+            <div class="mb-5">
               <cScoreChart :games-played="year.gamesPlayed" />
             </div>
 
