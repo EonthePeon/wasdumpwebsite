@@ -1,40 +1,43 @@
 <template>
   <div class="container py-4">
-    <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
-      <h2 class="mb-0">Game Competition Admin</h2>
-      <div class="d-flex align-items-center gap-2">
-        <label class="mb-0">Editing as:</label>
-        <select v-model="currentPlayerId" class="form-select" style="width: auto">
-          <option value="">Select player...</option>
-          <option v-for="p in gc.players.value" :key="p.userId" :value="p.userId">{{ p.name }}</option>
-        </select>
-        <button
-          v-if="tab === 'games'"
-          class="btn btn-primary"
-          :disabled="!currentPlayerId"
-          @click="gamesAdmin?.openAddModal()"
-        >
-          Add Game
-        </button>
-      </div>
-    </div>
+    <h2 class="mb-4">Game Competition Admin</h2>
 
     <div v-if="!gc.isDev" class="alert alert-info">
-      Editing only works in dev mode (<code>npm run dev</code>) — this page is read-only on the live site.
+      This tool only works locally (<code>npm run dev</code>) — nothing to see here on the live site.
     </div>
 
-    <ul class="nav nav-tabs mb-4">
-      <li class="nav-item" v-for="t in tabs" :key="t.id">
-        <button class="nav-link" :class="{ active: tab === t.id }" @click="tab = t.id">{{ t.label }}</button>
-      </li>
-    </ul>
+    <template v-else>
+      <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+        <div class="d-flex align-items-center gap-2">
+          <label class="mb-0">Editing as:</label>
+          <select v-model="currentPlayerId" class="form-select" style="width: auto">
+            <option value="">Select player...</option>
+            <option v-for="p in gc.players.value" :key="p.userId" :value="p.userId">{{ p.name }}</option>
+          </select>
+          <button
+            v-if="tab === 'games'"
+            class="btn btn-primary"
+            :disabled="!currentPlayerId"
+            @click="gamesAdmin?.openAddModal()"
+          >
+            Add Game
+          </button>
+        </div>
+      </div>
 
-    <cCompetitionStart v-if="tab === 'start'" />
-    <cCompetitionEnd v-else-if="tab === 'end'" />
-    <cGamesAdmin v-else-if="tab === 'games'" ref="gamesAdmin" />
-    <cConsolesAdmin v-else-if="tab === 'consoles'" />
-    <cYearAdmin v-else-if="tab === 'years'" />
-    <cTimerImageAdmin v-else-if="tab === 'timer-image'" />
+      <ul class="nav nav-tabs mb-4">
+        <li class="nav-item" v-for="t in tabs" :key="t.id">
+          <button class="nav-link" :class="{ active: tab === t.id }" @click="tab = t.id">{{ t.label }}</button>
+        </li>
+      </ul>
+
+      <cCompetitionStart v-if="tab === 'start'" />
+      <cCompetitionEnd v-else-if="tab === 'end'" />
+      <cGamesAdmin v-else-if="tab === 'games'" ref="gamesAdmin" />
+      <cConsolesAdmin v-else-if="tab === 'consoles'" />
+      <cYearAdmin v-else-if="tab === 'years'" />
+      <cTimerImageAdmin v-else-if="tab === 'timer-image'" />
+    </template>
   </div>
 </template>
 
@@ -65,6 +68,7 @@ const tabs = [
 
 // Default to the End Competition tab when one's already running.
 onMounted(async () => {
+  if (!gc.isDev) return
   await gc.loadAll()
   if (gc.currentCompetition.value) tab.value = 'end'
 })

@@ -47,7 +47,7 @@
               <i class="bi bi-trophy me-2"></i>Bosses
             </a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown" v-if="isDev">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-gear me-2"></i>Admin
             </a>
@@ -90,6 +90,9 @@
 <script>
 export default {
   name: 'cHeader',
+  data() {
+    return { isDev: import.meta.env.DEV }
+  },
   methods: {
     navigateToBossTracker() {
       this.$router.push({ name: 'BossTracker' })
