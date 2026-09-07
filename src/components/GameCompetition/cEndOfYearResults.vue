@@ -28,6 +28,7 @@
               </div>
             </div>
           </div>
+          <cScoreChart :games-played="results.gamesPlayed" />
         </div>
       </div>
     </section>
@@ -78,84 +79,14 @@
         </div>
       </div>
     </section>
-
-    <section class="mb-4">
-      <div class="card">
-        <div class="card-body p-4">
-          <div class="d-flex align-items-center justify-content-between mb-3">
-            <h5 class="card-title mb-0">Score Progression</h5>
-            <button class="btn btn-info btn-sm" @click="showChart = !showChart">
-              {{ showChart ? 'Hide' : 'Show' }} Chart
-            </button>
-          </div>
-          <canvas ref="chartCanvas" v-show="showChart"></canvas>
-          <div v-if="!showChart" class="text-center py-4 text-muted">
-            <small>Click "Show" to reveal the score chart</small>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
   <div v-else class="text-center py-5 text-muted">No results to display.</div>
 </template>
 
 <script setup>
-import { ref, watch, nextTick } from 'vue'
-import Chart from 'chart.js/auto'
+import cScoreChart from '@/components/cScoreChart.vue'
 
-const props = defineProps({ results: Object })
-const showChart = ref(false)
-const chartCanvas = ref(null)
-let chartInstance = null
-
-function buildChart() {
-  const games = props.results?.gamesPlayed
-  if (!games || !chartCanvas.value) return
-
-  const allDates = [...new Set(games.map((g) => g.competionDate))].sort((a, b) => new Date(a) - new Date(b))
-  const players = [...new Set(games.flatMap((g) => g.scores.map((s) => s.player)))]
-
-  const datasets = players.map((player, i) => {
-    let running = 0
-    const data = allDates.map((date) => {
-      const pointsForDate = games
-        .filter((g) => g.competionDate === date)
-        .reduce((sum, g) => sum + (g.scores.find((s) => s.player === player)?.points ?? 0), 0)
-      running += pointsForDate
-      return running
-    })
-    return {
-      label: `${player} Total`,
-      data,
-      fill: false,
-      borderColor: `hsl(${(i * 137.5) % 360}, 70%, 60%)`,
-      tension: 0,
-    }
-  })
-
-  if (chartInstance) chartInstance.destroy()
-  chartInstance = new Chart(chartCanvas.value, {
-    type: 'line',
-    data: { labels: allDates, datasets },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: { position: 'top' },
-        title: { display: true, text: 'Cumulative Scores by Day' },
-      },
-      scales: {
-        y: { ticks: { stepSize: 1, callback: (v) => (Number.isInteger(v) ? v : null) } },
-      },
-    },
-  })
-}
-
-watch(() => props.results, () => {
-  if (showChart.value) nextTick(buildChart)
-})
-watch(showChart, (val) => {
-  if (val) nextTick(buildChart)
-})
+defineProps({ results: Object })
 </script>
 
 <style scoped>

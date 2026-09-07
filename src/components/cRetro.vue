@@ -49,6 +49,9 @@
                     </tbody>
                   </table>
                 </div>
+                <div class="px-4 pb-3">
+                  <cScoreChart :games-played="localResults.gamesPlayed" />
+                </div>
               </div>
             </div>
           </div>
@@ -196,12 +199,14 @@ import { computed, ref, onMounted } from 'vue'
 import { useGameCompetition } from '@/composables/useGameCompetition'
 import cRetroYears from './cRetroYears.vue'
 import cConsoleStandings from './cConsoleStandings.vue'
+import cScoreChart from './cScoreChart.vue'
 
 export default {
   name: 'cRetro',
   components: {
     cRetroYears,
     cConsoleStandings,
+    cScoreChart,
   },
   setup() {
     const gc = useGameCompetition()
