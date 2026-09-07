@@ -43,7 +43,14 @@ import cRandomPicker from './cRandomPicker.vue'
 
 const gc = useGameCompetition()
 
-const date = ref(new Date().toISOString().split('T')[0])
+// Retro Races streams on Sundays - default to the next one, never today.
+function nextSunday() {
+  const d = new Date()
+  const daysUntil = (7 - d.getDay()) % 7 || 7
+  d.setDate(d.getDate() + daysUntil)
+  return d.toISOString().split('T')[0]
+}
+const date = ref(nextSunday())
 const playerCount = ref(gc.players.value.length || 2)
 const goal = ref('')
 const systemId = ref('')
