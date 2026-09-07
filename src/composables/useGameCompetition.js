@@ -29,17 +29,27 @@ export function useGameCompetition() {
 
   // Persists one file back to disk via the dev-only vite save endpoint.
   // No-ops in production — there's no server to receive the write.
+  // On failure, rolls back the optimistic update and alerts loudly — a save
+  // that silently fails looks identical to one that worked, which is how
+  // results have gotten lost before.
   async function save(file, data) {
     if (!isDev) return
+    const previous = REFS[file].value
     REFS[file].value = data
     try {
-      await fetch(`/api/save-data/${file}`, {
+      const res = await fetch(`/api/save-data/${file}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       })
+      const result = await res.json().catch(() => null)
+      if (!res.ok || !result?.ok) {
+        throw new Error(result?.error || `HTTP ${res.status}`)
+      }
     } catch (e) {
+      REFS[file].value = previous
       console.error(`GameCompetition: save ${file} failed`, e)
+      alert(`Failed to save — your change was NOT saved.\n\n${file}.json: ${e.message}\n\nIs "npm run dev" still running?`)
     }
   }
 

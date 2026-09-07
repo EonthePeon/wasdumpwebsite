@@ -63,7 +63,7 @@
     "competionDate": "2025-04-06T00:00:00",
     "active": false,
     "complete": true,
-    "goal": "Get the least points! Points are based on race position, and we\u2019ll see who can finish with the lowest score",
+    "goal": "Get the least points! Points are based on race position, and we’ll see who can finish with the lowest score",
     "yearId": "3185ae21-4d41-420d-9527-5aa0ce57a09a",
     "results": [
       {
@@ -1357,11 +1357,27 @@
     "gameId": "e81ded78-196a-4b2d-9808-c32344b1555d",
     "playerCount": 3,
     "competionDate": "2026-08-30T21:12:04.687",
-    "active": true,
-    "complete": false,
+    "active": false,
+    "complete": true,
     "goal": "Progress",
     "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
-    "results": []
+    "results": [
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 2,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 3,
+        "bonusPoints": 0
+      }
+    ]
   },
   {
     "competitionId": "b9971ac6-4e91-46c4-a080-d78e6f8f9fa2",
@@ -1474,5 +1490,17 @@
         "bonusPoints": 0
       }
     ]
+  },
+  {
+    "competitionId": "fae3673c-811e-4725-a4b5-3dde92493c56",
+    "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
+    "gameId": "8bb8840a-1f68-4e47-bed5-0f96c057a99f",
+    "playerCount": 3,
+    "competionDate": "2026-09-07T02:03:11.297Z",
+    "active": true,
+    "complete": false,
+    "goal": "",
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "results": []
   }
 ]

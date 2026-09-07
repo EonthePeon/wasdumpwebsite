@@ -89,7 +89,7 @@
   },
   {
     "gameId": "e3f77af5-74c7-4411-9183-20a4097cafcd",
-    "game": "Dragon\u0027s Lair",
+    "game": "Dragon's Lair",
     "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
     "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
     "finished": true,
@@ -297,7 +297,7 @@
   },
   {
     "gameId": "bbdc1973-20fc-487f-a4c1-59a55300aa2c",
-    "game": "King\u0027s Quest V",
+    "game": "King's Quest V",
     "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
     "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
     "finished": false,
@@ -361,7 +361,7 @@
   },
   {
     "gameId": "81e64440-07b5-4866-a953-6f85f73a18dd",
-    "game": "Cruis\u0027n World",
+    "game": "Cruis'n World",
     "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
     "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
     "finished": true,
@@ -417,7 +417,7 @@
   },
   {
     "gameId": "1591c194-7862-4557-b176-80d01e073e65",
-    "game": "Rock n\u0027 Roll Racing",
+    "game": "Rock n' Roll Racing",
     "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
     "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
     "finished": true,
@@ -513,7 +513,7 @@
   },
   {
     "gameId": "f5609325-54e0-4f33-9cdd-a562dbb59617",
-    "game": "Jackie Chan\u0027s Action Kung Fu",
+    "game": "Jackie Chan's Action Kung Fu",
     "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
     "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
     "finished": true,
@@ -604,7 +604,7 @@
     "game": "Gex",
     "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
     "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
-    "finished": false,
+    "finished": true,
     "archive": false
   },
   {
@@ -673,7 +673,7 @@
   },
   {
     "gameId": "7b7a036b-3512-4763-a92f-d8adc769b751",
-    "game": "John Romero\u0027s Daikatana",
+    "game": "John Romero's Daikatana",
     "systemId": "924fc32e-5c1c-4fa6-964b-65ae6e711b39",
     "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
     "finished": true,
@@ -705,7 +705,7 @@
   },
   {
     "gameId": "5b895261-ebdf-4ed5-ab16-e48fabac50af",
-    "game": "Fester\u0027s Quest",
+    "game": "Fester's Quest",
     "systemId": "e7241a87-47d9-492a-9b17-8b367ad848c0",
     "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
     "finished": true,
