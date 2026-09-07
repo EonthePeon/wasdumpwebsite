@@ -100,38 +100,10 @@
                 <i class="bi" :class="showConsoles ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
               </div>
               <div class="card-body bg-darker" v-if="showConsoles">
-                <div class="row g-3">
-                  <template
-                    v-for="(console, idx) in localResults.consolesPlayed"
-                    :key="console.consoleName"
-                  >
-                    <div
-                      :class="`col-md-${Math.max(6, 12 / numConsoleCols)} col-lg-${12 / numConsoleCols}`"
-                    >
-                      <div
-                        class="p-3 border border-secondary rounded h-100 bg-secondary bg-opacity-10"
-                      >
-                        <strong
-                          class="d-block text-secondary mb-2 border-bottom border-secondary pb-1"
-                          >{{ console.consoleName }}
-                          <span class="badge bg-secondary text-dark float-end"
-                            >{{ console.gamesPlayedCount }} games</span
-                          ></strong
-                        >
-                        <ul class="list-unstyled mb-0 small">
-                          <li
-                            v-for="win in console.playerWins"
-                            :key="win.player"
-                            class="d-flex justify-content-between mb-1"
-                          >
-                            <span class="console-player-name text-truncate">{{ win.player }}</span>
-                            <span class="text-white">{{ win.wins }}</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </template>
-                </div>
+                <cConsoleStandings
+                  :consoles-played="localResults.consolesPlayed"
+                  :games-played="localResults.gamesPlayed"
+                />
               </div>
             </div>
           </div>
@@ -223,11 +195,13 @@
 import { computed, ref, onMounted } from 'vue'
 import { useGameCompetition } from '@/composables/useGameCompetition'
 import cRetroYears from './cRetroYears.vue'
+import cConsoleStandings from './cConsoleStandings.vue'
 
 export default {
   name: 'cRetro',
   components: {
     cRetroYears,
+    cConsoleStandings,
   },
   setup() {
     const gc = useGameCompetition()
@@ -254,14 +228,8 @@ export default {
       }
     })
 
-    const numConsoleCols = computed(() => {
-      const consoles = localResults.value?.consolesPlayed || []
-      return Math.max(1, Math.min(consoles.length, 4))
-    })
-
     return {
       localResults,
-      numConsoleCols,
       showConsoles,
       showGames,
       showPastYears,
@@ -271,20 +239,3 @@ export default {
 }
 </script>
 
-<style scoped>
-/* Truncate long player names in consoles bar */
-.console-player-name {
-  max-width: 90px;
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  vertical-align: bottom;
-}
-@media (max-width: 576px) {
-  .console-player-name {
-    max-width: 60px;
-    font-size: 0.95em;
-  }
-}
-</style>

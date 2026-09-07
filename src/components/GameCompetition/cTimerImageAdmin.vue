@@ -31,10 +31,16 @@ async function upload() {
   uploading.value = true
   message.value = ''
   try {
-    await fetch('/api/upload-timer-image', { method: 'POST', body: file.value })
+    const res = await fetch('/api/upload-timer-image', { method: 'POST', body: file.value })
+    const result = await res.json().catch(() => null)
+    if (!res.ok || !result?.ok) {
+      throw new Error(result?.error || `HTTP ${res.status}`)
+    }
     message.value = 'Image updated.'
     previewSrc.value = `/assets/images/game.jpg?t=${Date.now()}`
     file.value = null
+  } catch (e) {
+    alert(`Upload failed: ${e.message}\n\nIs "npm run dev" still running?`)
   } finally {
     uploading.value = false
   }
