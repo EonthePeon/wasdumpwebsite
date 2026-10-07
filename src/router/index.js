@@ -31,6 +31,11 @@ const router = createRouter({
       component: () => import('@/views/GameCompetitionAdminView.vue'),
     },
     {
+      path: '/when',
+      name: 'When',
+      component: () => import('@/views/WhenView.vue'),
+    },
+    {
       path: '/videos/admin',
       name: 'VideosAdmin',
       component: () => import('@/views/VideosAdminView.vue'),
