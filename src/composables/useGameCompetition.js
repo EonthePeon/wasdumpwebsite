@@ -10,6 +10,13 @@ const loaded = ref(false)
 const FILES = ['consoles', 'players', 'games', 'years', 'competitions']
 const REFS = { consoles, players, games, years, competitions }
 
+// Some older rows were saved as UTC midnight, which reads a day early in US time zones -
+// show those as the plain calendar date they were meant to be.
+export function formatCompetitionDate(iso) {
+  const utcMidnight = /T00:00:00(\.000)?Z$/.test(iso)
+  return new Date(iso).toLocaleDateString('en-US', utcMidnight ? { timeZone: 'UTC' } : undefined)
+}
+
 export function useGameCompetition() {
   const isDev = import.meta.env.DEV
 
@@ -64,8 +71,9 @@ export function useGameCompetition() {
 
   const activeYear = computed(() => years.value.find((y) => y.isActive))
 
-  const currentCompetition = computed(() =>
-    competitions.value.find((c) => c.active && !c.complete)
+  // A multi-game set means several can be in progress at once.
+  const activeCompetitions = computed(() =>
+    competitions.value.filter((c) => c.active && !c.complete)
   )
 
   // Ported from CompetitionService.CalculateScore
@@ -112,7 +120,7 @@ export function useGameCompetition() {
       gamesPlayed.push({
         gameName: gameName(comp.gameId),
         console: console_,
-        competionDate: new Date(comp.competionDate).toLocaleDateString('en-US'),
+        competionDate: formatCompetitionDate(comp.competionDate),
         winner,
         scores: [...scores].sort((a, b) => b.points - a.points),
       })
@@ -166,7 +174,7 @@ export function useGameCompetition() {
     consoles, players, games, years, competitions, loaded, isDev,
     loadAll, saveConsoles, saveGames, saveYears, saveCompetitions,
     consoleName, gameName, playerName,
-    activeYear, currentCompetition, standings,
+    activeYear, activeCompetitions, standings,
     calculateScore, getEndOfYearResults,
   }
 }

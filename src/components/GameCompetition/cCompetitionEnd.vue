@@ -1,7 +1,22 @@
 <template>
-  <div v-if="!competition" class="text-muted">No competition currently in progress.</div>
+  <div v-if="!competitions.length" class="text-muted">No competition currently in progress.</div>
 
   <div v-else>
+    <div v-if="competitions.length > 1" class="mb-4">
+      <div class="text-muted small mb-2">{{ competitions.length }} games in progress — finish one at a time:</div>
+      <div class="d-flex flex-wrap gap-2">
+        <button
+          v-for="c in competitions"
+          :key="c.competitionId"
+          class="btn btn-sm"
+          :class="c.competitionId === competition.competitionId ? 'btn-primary' : 'btn-outline-secondary'"
+          @click="selectedId = c.competitionId"
+        >
+          {{ gc.gameName(c.gameId) }} ({{ gc.consoleName(c.systemId) }})
+        </button>
+      </div>
+    </div>
+
     <h5>{{ gc.gameName(competition.gameId) }} — {{ gc.consoleName(competition.systemId) }}</h5>
     <p class="text-muted">"{{ competition.goal }}"</p>
 
@@ -18,7 +33,7 @@
 
     <div v-if="placeError" class="alert alert-danger py-2">{{ placeError }}</div>
     <p class="text-muted small">Leave everyone at "—" to end it without recording any results.</p>
-    <button class="btn btn-success" :disabled="!!placeError" @click="finish">End Competition</button>
+    <button class="btn btn-success" :disabled="!!placeError" @click="finish">End {{ gc.gameName(competition.gameId) }}</button>
   </div>
 </template>
 
@@ -27,10 +42,18 @@ import { ref, computed, watch } from 'vue'
 import { useGameCompetition } from '@/composables/useGameCompetition'
 
 const gc = useGameCompetition()
-const competition = computed(() => gc.currentCompetition.value)
+const competitions = computed(() => gc.activeCompetitions.value)
+const selectedId = ref('')
+
+// Falls back to the first one in progress, including after the selected game is finished.
+const competition = computed(
+  () => competitions.value.find((c) => c.competitionId === selectedId.value) ?? competitions.value[0]
+)
+
 const playerRows = ref([])
 
-watch(competition, (c) => {
+// Only reset the form when switching games, not when some other competition changes.
+watch(() => competition.value?.competitionId, () => {
   playerRows.value = gc.players.value.map((p) => ({ userId: p.userId, name: p.name, place: 0, bonusPoints: 0 }))
 }, { immediate: true })
 
@@ -49,7 +72,7 @@ function finish() {
     c.competitionId === competition.value.competitionId ? { ...c, active: false, complete: true, results } : c
   )
 
-  // Archive the game so it can't be picked again this year, matching the old EndCompetition behavior.
+  // Mark the game finished so it can't be picked again this year, matching the old EndCompetition behavior.
   const games = gc.games.value.map((g) =>
     g.gameId === competition.value.gameId ? { ...g, finished: true } : g
   )

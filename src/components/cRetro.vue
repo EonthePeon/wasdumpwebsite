@@ -53,31 +53,38 @@
             </div>
           </div>
 
-          <div class="col-lg-4" v-if="currentCompetition">
+          <div class="col-lg-4" v-if="currentRaces.length">
             <div class="card shadow-sm border-secondary h-100">
               <div class="card-header bg-transparent border-bottom border-secondary">
-                <h4 class="mb-0 text-secondary"><i class="bi bi-flag me-2"></i>Current Race</h4>
+                <h4 class="mb-0 text-secondary">
+                  <i class="bi bi-flag me-2"></i>{{ currentRaces.length > 1 ? 'Current Races' : 'Current Race' }}
+                </h4>
               </div>
               <div class="card-body d-flex flex-column justify-content-center text-center">
-                <h5 class="display-6 text-white mb-2">{{ currentCompetition.GameName }}</h5>
-                <h6 class="card-subtitle mb-4 text-muted text-uppercase letter-spacing-2">
-                  {{ currentCompetition.System }}
-                </h6>
-
                 <div
-                  class="p-3 bg-black bg-opacity-25 rounded mb-3 border border-secondary border-opacity-25"
+                  v-for="(race, i) in currentRaces"
+                  :key="race.id"
+                  :class="{ 'pt-3 mt-3 border-top border-secondary': i > 0 }"
                 >
-                  <p class="card-text fst-italic text-light mb-0">
-                    "{{ currentCompetition.Goal }}"
+                  <h5 class="text-white mb-2" :class="currentRaces.length > 1 ? 'h3' : 'display-6'">
+                    {{ race.GameName }}
+                  </h5>
+                  <h6 class="card-subtitle mb-3 text-muted text-uppercase letter-spacing-2">
+                    {{ race.System }}
+                  </h6>
+
+                  <div
+                    class="p-3 bg-black bg-opacity-25 rounded mb-3 border border-secondary border-opacity-25"
+                  >
+                    <p class="card-text fst-italic text-light mb-0">"{{ race.Goal }}"</p>
+                  </div>
+
+                  <p class="card-text mb-0">
+                    <small class="text-muted"
+                      ><i class="bi bi-calendar3 me-1"></i>Date: {{ race.CompetionDateString }}</small
+                    >
                   </p>
                 </div>
-
-                <p class="card-text mt-auto">
-                  <small class="text-muted"
-                    ><i class="bi bi-calendar3 me-1"></i>Date:
-                    {{ currentCompetition.CompetionDateString }}</small
-                  >
-                </p>
               </div>
             </div>
           </div>
@@ -199,7 +206,7 @@
 
 <script>
 import { computed, ref, onMounted } from 'vue'
-import { useGameCompetition } from '@/composables/useGameCompetition'
+import { useGameCompetition, formatCompetitionDate } from '@/composables/useGameCompetition'
 import cRetroYears from './cRetroYears.vue'
 import cConsoleStandings from './cConsoleStandings.vue'
 import cScoreChart from './cScoreChart.vue'
@@ -225,23 +232,22 @@ export default {
       return gc.getEndOfYearResults(gc.activeYear.value.yearId)
     })
 
-    const currentCompetition = computed(() => {
-      const c = gc.currentCompetition.value
-      if (!c) return null
-      return {
+    const currentRaces = computed(() =>
+      gc.activeCompetitions.value.map((c) => ({
+        id: c.competitionId,
         GameName: gc.gameName(c.gameId),
         System: gc.consoleName(c.systemId),
         Goal: c.goal,
-        CompetionDateString: new Date(c.competionDate).toLocaleDateString('en-US'),
-      }
-    })
+        CompetionDateString: formatCompetitionDate(c.competionDate),
+      }))
+    )
 
     return {
       localResults,
       showConsoles,
       showGames,
       showPastYears,
-      currentCompetition,
+      currentRaces,
     }
   },
 }

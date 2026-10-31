@@ -70,6 +70,6 @@ const tabs = [
 onMounted(async () => {
   if (!gc.isDev) return
   await gc.loadAll()
-  if (gc.currentCompetition.value) tab.value = 'end'
+  if (gc.activeCompetitions.value.length) tab.value = 'end'
 })
 </script>
