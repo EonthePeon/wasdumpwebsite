@@ -1553,6 +1553,46 @@
     "gameId": "d17aac57-6c79-4d06-94c5-ddbb9c8d2a7d",
     "playerCount": 3,
     "competionDate": "2026-10-05T00:00:00.000Z",
+    "active": false,
+    "complete": true,
+    "goal": "Most Progress",
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "results": [
+      {
+        "userId": "069660c4-326a-428c-b1c9-661a8ef5816d",
+        "place": 1,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "6688926c-e417-46f5-8e64-9d73da969f5f",
+        "place": 3,
+        "bonusPoints": 0
+      },
+      {
+        "userId": "1929490a-d0c6-4ee0-a829-dd6a98b4dea4",
+        "place": 2,
+        "bonusPoints": 0
+      }
+    ]
+  },
+  {
+    "competitionId": "2041000a-c516-4515-b223-fb1456a598c0",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "87482dd2-2896-4569-928f-ccded0c67f52",
+    "playerCount": 3,
+    "competionDate": "2026-11-08T12:00:00",
+    "active": true,
+    "complete": false,
+    "goal": "Most Progress",
+    "yearId": "b607a23f-f474-4aca-8391-ab3910a085a1",
+    "results": []
+  },
+  {
+    "competitionId": "8f4f4e1f-a748-4a82-95b6-5873632064d3",
+    "systemId": "f2e0e737-e834-4a2c-94c9-9689adbedd60",
+    "gameId": "8fd7a23a-566d-45e6-be70-86dc0d7316e2",
+    "playerCount": 3,
+    "competionDate": "2026-11-08T12:00:00",
     "active": true,
     "complete": false,
     "goal": "Most Progress",
